@@ -181,17 +181,17 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scope());
+console.log(joe.scope());
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scopeArrow());
+console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-// 
+//    Undefined.
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//    Undefined.
 // 3. Explain why "this" is different when an arrow function is used.
-// 
+//    "this" is different when an arrow function is used because the scope becomes global. We know this because the console log of "this" on lines 180 and 186 are in relation to Student and Window, respectively.
